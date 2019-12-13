@@ -172,7 +172,7 @@ class LoginPage extends React.Component {
         } else {
             this.setState({
                 pageNo: (page - 1) * 10,
-                todossData: this.props.todosData.slice((page - 1) * 10, ((page - 1) * 10) + 10),
+                todosData: this.props.todosData.slice((page - 1) * 10, ((page - 1) * 10) + 10),
             });
         }
     }
@@ -192,7 +192,7 @@ class LoginPage extends React.Component {
         const { loading, pageLoading } = this.props;
         if (pageLoading) {
             return (
-                <div style={{ height: '400px' }}>
+                <div className='page-loader'>
                     <Spin size="large" />
                 </div>);
         }

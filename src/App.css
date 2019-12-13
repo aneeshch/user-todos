@@ -61,3 +61,11 @@
 .form-inoouts input{
   margin-top: 20px;
 }
+
+.page-loader{
+  height: 400px;
+  top: 40%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
